@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for your interest in improving **awesome-gamedev-agent-skills**. This collection
+Thanks for your interest in improving **SadSha Game Dev Skills**. This collection
 values correct, lean, original skills over volume. Please read this guide and the
 authoring standard in [`docs/SKILL-FORMAT.md`](docs/SKILL-FORMAT.md) before opening a PR.
 
@@ -109,7 +109,7 @@ python scripts/check-site.py        # per-page title/description/canonical check
 
 For a later rebuild, use `python scripts/generate-site.py --clean`. Non-empty output
 is refused without this flag, and `--clean` only replaces directories carrying the
-generator's `.gamedev-skills-site` marker. Use a new or empty directory for `--out`;
+generator's `.sadsha-game-dev-skills-site` marker. Use a new or empty directory for `--out`;
 the repository, its ancestors, filesystem roots, and symlink outputs are rejected.
 Everything inside a marked output directory is disposable when you use `--clean`.
 

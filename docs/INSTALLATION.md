@@ -36,15 +36,15 @@ a symlink to one shared copy (add `--copy` for independent copies, `-y` to skip 
 
 ```bash
 # install into whatever agent(s) you have
-npx skills add gamedev-skills/awesome-gamedev-agent-skills
+npx skills add fnjlabs-arch/awesome-gamedev-agent-skills
 
 # preview the skill list without installing anything
-npx skills add gamedev-skills/awesome-gamedev-agent-skills --list
+npx skills add fnjlabs-arch/awesome-gamedev-agent-skills --list
 
 # target one agent · install globally for all projects · grab a subset
-npx skills add gamedev-skills/awesome-gamedev-agent-skills -a cursor
-npx skills add gamedev-skills/awesome-gamedev-agent-skills -g
-npx skills add gamedev-skills/awesome-gamedev-agent-skills --skill godot-tilemap --skill platformer
+npx skills add fnjlabs-arch/awesome-gamedev-agent-skills -a cursor
+npx skills add fnjlabs-arch/awesome-gamedev-agent-skills -g
+npx skills add fnjlabs-arch/awesome-gamedev-agent-skills --skill godot-tilemap --skill platformer
 ```
 
 Companions: `npx skills list` (what's installed), `npx skills check` (look for updates),
@@ -60,23 +60,23 @@ This repo is a Claude Code plugin marketplace (see [`.claude-plugin/marketplace.
 so you can install it without cloning or copying files. Add the marketplace once:
 
 ```bash
-claude plugin marketplace add gamedev-skills/awesome-gamedev-agent-skills
+claude plugin marketplace add fnjlabs-arch/awesome-gamedev-agent-skills
 ```
 
 Easiest — install the router and all 79 skills in one command:
 
 ```bash
-claude plugin install gamedev@awesome-gamedev-agent-skills
+claude plugin install gamedev@sadsha-game-dev-skills
 ```
 
 Or install just what you use (each engine and category is its own plugin):
 
 ```bash
-claude plugin install router@awesome-gamedev-agent-skills        # always install this
-claude plugin install godot@awesome-gamedev-agent-skills         # engine: godot | unity | unreal | ebitengine | web-engines | other-engines
-claude plugin install disciplines@awesome-gamedev-agent-skills   # cross-engine concepts
-claude plugin install genres@awesome-gamedev-agent-skills        # genre templates
-claude plugin install workflows@awesome-gamedev-agent-skills     # jam / prototype / shipping
+claude plugin install router@sadsha-game-dev-skills        # always install this
+claude plugin install godot@sadsha-game-dev-skills         # engine: godot | unity | unreal | ebitengine | web-engines | other-engines
+claude plugin install disciplines@sadsha-game-dev-skills   # cross-engine concepts
+claude plugin install genres@sadsha-game-dev-skills        # genre templates
+claude plugin install workflows@sadsha-game-dev-skills     # jam / prototype / shipping
 ```
 
 Verify with `/plugin` or `/skills` inside Claude Code, or `claude plugin list` in your shell. Plugin
@@ -85,8 +85,8 @@ skills are namespaced by plugin, so to invoke one directly type `/<plugin>:<skil
 
 Add `--scope project` to `claude plugin marketplace add` and `claude plugin install` to record
 them in the project's settings and share them with your team. To pick up a new release, run
-`claude plugin marketplace update awesome-gamedev-agent-skills`, then
-`claude plugin update gamedev@awesome-gamedev-agent-skills` (or the plugin you installed).
+`claude plugin marketplace update sadsha-game-dev-skills`, then
+`claude plugin update gamedev@sadsha-game-dev-skills` (or the plugin you installed).
 
 **Many skills installed?** Claude Code lists skill descriptions within a budget of 1% of the
 context window and cuts some descriptions when the list is longer. Install `router` plus your
@@ -167,7 +167,7 @@ cp -R skills/godot/godot-tilemap .agents/skills/
 Gemini CLI and Codex can also be targeted by the universal CLI, no clone needed:
 
 ```bash
-npx skills add gamedev-skills/awesome-gamedev-agent-skills -a gemini-cli   # or: -a codex
+npx skills add fnjlabs-arch/awesome-gamedev-agent-skills -a gemini-cli   # or: -a codex
 ```
 
 - **Gemini CLI:** manage and verify with `/skills`; activation prompts for consent.
@@ -207,7 +207,7 @@ Upload the complete skill folder so bundled references, scripts, and assets rema
 ## Cursor / Windsurf / Cline (native skills)
 
 These editors read `SKILL.md` natively — there is no rule-file conversion. The simplest install is
-the universal CLI (`npx skills add gamedev-skills/awesome-gamedev-agent-skills -a cursor`; swap in
+the universal CLI (`npx skills add fnjlabs-arch/awesome-gamedev-agent-skills -a cursor`; swap in
 `windsurf` or `cline`). To place files by hand:
 
 ```bash
@@ -235,8 +235,8 @@ skills into one of those directories as above, or use GitHub CLI 2.90.0 or later
 `gh skill` command is in public preview:
 
 ```bash
-gh skill install gamedev-skills/awesome-gamedev-agent-skills --all           # every skill + router
-gh skill install gamedev-skills/awesome-gamedev-agent-skills godot-tilemap   # one skill
+gh skill install fnjlabs-arch/awesome-gamedev-agent-skills --all           # every skill + router
+gh skill install fnjlabs-arch/awesome-gamedev-agent-skills godot-tilemap   # one skill
 ```
 
 `gh skill` writes source-tracking metadata into each installed `SKILL.md` so `gh skill update`

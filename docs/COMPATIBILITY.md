@@ -17,7 +17,7 @@ For step-by-step install commands, see [`INSTALLATION.md`](INSTALLATION.md).
   CLI, GitHub Copilot, Kiro, Antigravity, VS Code, Roo Code, Junie, Trae, Factory, Tabnine, OpenCode, Goose and
   [many others](https://agentskills.io/clients) load the standard directly. Oh My Pi (omp) does
   too, though it is not yet listed in that client showcase.
-- **One installer covers most of them.** `npx skills add gamedev-skills/awesome-gamedev-agent-skills`
+- **One installer covers most of them.** `npx skills add fnjlabs-arch/awesome-gamedev-agent-skills`
   detects the agents you have installed and installs the skills (router included) in the right
   place. Claude.ai uploads and Oh My Pi use their own routes (see [`INSTALLATION.md`](INSTALLATION.md)).
 - **The skills here use only the portable core**, so a single tree works in every agent — no
@@ -31,13 +31,13 @@ symlinks each agent's skills directory to one shared copy (`--copy` writes indep
 
 ```bash
 # install the router + all 79 skills into whatever agent(s) you have
-npx skills add gamedev-skills/awesome-gamedev-agent-skills
+npx skills add fnjlabs-arch/awesome-gamedev-agent-skills
 
 # preview without installing
-npx skills add gamedev-skills/awesome-gamedev-agent-skills --list
+npx skills add fnjlabs-arch/awesome-gamedev-agent-skills --list
 
 # target a specific agent, and/or install globally for every project
-npx skills add gamedev-skills/awesome-gamedev-agent-skills -a cursor -g
+npx skills add fnjlabs-arch/awesome-gamedev-agent-skills -a cursor -g
 ```
 
 The `skills` CLI finds the catalog under `skills/` and the master [`router/`](../router) skill

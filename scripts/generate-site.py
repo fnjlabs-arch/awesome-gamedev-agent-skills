@@ -28,14 +28,14 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_OUT = REPO_ROOT / "_site"
-DEFAULT_BASE_URL = "https://gamedev-skills.github.io/awesome-gamedev-agent-skills"
-REPO_SLUG = "gamedev-skills/awesome-gamedev-agent-skills"
+DEFAULT_BASE_URL = "https://fnjlabs-arch.github.io/awesome-gamedev-agent-skills"
+REPO_SLUG = "fnjlabs-arch/awesome-gamedev-agent-skills"
 GITHUB_BLOB = f"https://github.com/{REPO_SLUG}/blob/main"
 INSTALL_CMD = f"npx skills add {REPO_SLUG}"
 
 MAX_META_DESCRIPTION = 155
-OUTPUT_MARKER = ".gamedev-skills-site"
-OUTPUT_MARKER_CONTENT = "awesome-gamedev-agent-skills documentation output v1\n"
+OUTPUT_MARKER = ".sadsha-game-dev-skills-site"
+OUTPUT_MARKER_CONTENT = "sadsha-game-dev-skills documentation output v1\n"
 
 # Category slug -> (page heading, lead paragraph). Engine groups first.
 CATEGORIES: dict[str, tuple[str, str]] = {

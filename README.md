@@ -1,10 +1,10 @@
 <!-- markdownlint-disable MD033 MD041 -->
 
-# awesome-gamedev-agent-skills
+# SadSha Game Dev Skills
 
 <p align="center">
-  <img src="docs/assets/awesome-gamedev-agent-skills-banner.png" width="820"
-       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 79 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
+  <img src="docs/assets/sadsha-game-dev-skills-banner.png" width="820"
+       alt="SadSha Game Dev Skills — game-dev skills for AI coding agents. 79 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
 </p>
 
 **Make games with your AI coding agent, in the engine you already use.** 79 skills for 12
@@ -12,16 +12,16 @@ engines: say what you're building, and a router loads the right 2 or 3 skills be
 writes code.
 
 ```bash
-npx skills add gamedev-skills/awesome-gamedev-agent-skills
+npx skills add fnjlabs-arch/awesome-gamedev-agent-skills
 ```
 
-[![Latest release](https://img.shields.io/github/v/release/gamedev-skills/awesome-gamedev-agent-skills)](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/releases/latest)
-[![skills.sh installs](https://skills.sh/b/gamedev-skills/awesome-gamedev-agent-skills)](https://skills.sh/gamedev-skills/awesome-gamedev-agent-skills)
+[![Latest release](https://img.shields.io/github/v/release/fnjlabs-arch/awesome-gamedev-agent-skills)](https://github.com/fnjlabs-arch/awesome-gamedev-agent-skills/releases/latest)
+[![skills.sh installs](https://skills.sh/b/fnjlabs-arch/awesome-gamedev-agent-skills)](https://skills.sh/fnjlabs-arch/awesome-gamedev-agent-skills)
 [![Engines checked](https://img.shields.io/badge/engines%20checked-2026--11--11-brightgreen)](docs/VERSION-SUPPORT.md)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
 [![Skills](https://img.shields.io/badge/skills-79%20%2B%20router-brightgreen)](skills/)
 [![Format](https://img.shields.io/badge/format-Agent%20Skills-informational)](docs/SKILL-FORMAT.md)
-[![Last commit](https://img.shields.io/github/last-commit/gamedev-skills/awesome-gamedev-agent-skills)](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/commits/main)
+[![Last commit](https://img.shields.io/github/last-commit/fnjlabs-arch/awesome-gamedev-agent-skills)](https://github.com/fnjlabs-arch/awesome-gamedev-agent-skills/commits/main)
 [![Sponsor](https://img.shields.io/badge/sponsor-this%20project-ea4aaa)](#sponsors)
 
 [Agent Skills](docs/SKILL-FORMAT.md) are small capability files an AI agent loads only when it
@@ -84,7 +84,7 @@ skills the router picks.
 coding agent you already use and installs the router plus all 79 skills into the right place:
 
 ```bash
-npx skills add gamedev-skills/awesome-gamedev-agent-skills
+npx skills add fnjlabs-arch/awesome-gamedev-agent-skills
 ```
 
 Add `--list` to preview first, `-g` to install for every project, or `-a <agent>` to target a
@@ -97,15 +97,15 @@ natively in Claude Code, Cursor, Windsurf, Cline, Codex, Gemini CLI, GitHub Copi
 can install it with Claude's own commands:
 
 ```bash
-claude plugin marketplace add gamedev-skills/awesome-gamedev-agent-skills
-claude plugin install gamedev@awesome-gamedev-agent-skills
+claude plugin marketplace add fnjlabs-arch/awesome-gamedev-agent-skills
+claude plugin install gamedev@sadsha-game-dev-skills
 ```
 
 Building in only one engine? Install a smaller bundle — `router` plus your engine:
 
 ```bash
-claude plugin install router@awesome-gamedev-agent-skills
-claude plugin install godot@awesome-gamedev-agent-skills    # or: unity · unreal · ebitengine · web-engines · other-engines
+claude plugin install router@sadsha-game-dev-skills
+claude plugin install godot@sadsha-game-dev-skills    # or: unity · unreal · ebitengine · web-engines · other-engines
 ```
 
 **Install tip.** If your agent already has many skills, install the router and your engine's
@@ -120,7 +120,7 @@ Prefer to copy the files by hand, or want the exact per-tool paths? See
 
 Want to read the catalog as web pages instead? Every skill, engine group, and per-agent install
 path is browsable at
-**[gamedev-skills.github.io/awesome-gamedev-agent-skills](https://gamedev-skills.github.io/awesome-gamedev-agent-skills/)**,
+**[fnjlabs-arch.github.io/awesome-gamedev-agent-skills](https://fnjlabs-arch.github.io/awesome-gamedev-agent-skills/)**,
 generated straight from the `SKILL.md` files in this repo.
 
 Then just talk to your agent — see below.
@@ -317,7 +317,7 @@ and nothing to convert.
 right place:
 
 ```bash
-npx skills add gamedev-skills/awesome-gamedev-agent-skills
+npx skills add fnjlabs-arch/awesome-gamedev-agent-skills
 ```
 
 **Or copy by hand.** Drop a skill's `<name>/` folder into your agent's skills directory:
@@ -393,8 +393,7 @@ python scripts/validate-skills.py
 
 ## Maintainer
 
-[awesome-gamedev-agent-skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills)
-was created and is maintained by [Abhishek Barali](https://github.com/AbhishekBarali).
+[SadSha Game Dev Skills](https://github.com/fnjlabs-arch/awesome-gamedev-agent-skills) is based on [awesome-gamedev-agent-skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills), created by [Abhishek Barali](https://github.com/AbhishekBarali).
 
 ## License
 
